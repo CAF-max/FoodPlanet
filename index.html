@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>레시피 공유</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- PC 환경에서만 나타날 메시지 -->
+    <div id="desktopMessage" class="desktop-message">
+        이 사이트는 모바일 (핸드폰,태블릿) 전용 사이트입니다. 죄송하지만 핸드폰,태블릿으로 접속해주십시오..
+    </div>
+    
+    <header>
+        <h1>레시피 공유 사이트</h1>
+        <nav>
+            <a href="#home">홈</a>
+            <a href="#upload">레시피 올리기</a>
+        </nav>
+    </header>
+    
+    <section id="upload">
+        <h2>새 레시피 올리기</h2>
+        <form id="recipeForm">
+            <label for="title">레시피 제목</label>
+            <input type="text" id="title" name="title" required>
+            
+            <label for="ingredients">재료</label>
+            <textarea id="ingredients" name="ingredients" required></textarea>
+            
+            <label for="instructions">조리법</label>
+            <textarea id="instructions" name="instructions" required></textarea>
+            
+            <button type="submit">레시피 제출</button>
+        </form>
+    </section>
+
+    <section id="recipes">
+        <h2>모든 레시피</h2>
+        <div id="recipeList"></div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 레시피 공유 사이트</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

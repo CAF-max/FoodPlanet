@@ -1,0 +1,99 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+}
+
+header {
+    background-color: #007BFF;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+header nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+section {
+    padding: 20px;
+    margin: 10px;
+}
+
+h2 {
+    color: #333;
+}
+
+input, textarea, button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+#recipeList {
+    display: flex;
+    flex-direction: column;
+}
+
+.recipe {
+    background-color: #fff;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.recipe h3 {
+    color: #007BFF;
+}
+
+.comment-section {
+    margin-top: 10px;
+}
+
+.comment {
+    padding: 5px;
+    margin-top: 5px;
+    background-color: #f1f1f1;
+    border-radius: 3px;
+}
+
+/* PC 환경에서 메시지 스타일 */
+.desktop-message {
+    display: none; /* 기본적으로 숨김 처리 */
+    background-color: #f8d7da;
+    color: #721c24;
+    padding: 20px;
+    text-align: center;
+    font-size: 18px;
+    border: 1px solid #f5c6cb;
+}
+
+/* 화면이 큰 경우, 즉 PC일 때만 메시지 표시 */
+@media (min-width: 768px) {
+    .desktop-message {
+        display: block;
+    }
+
+    body {
+        display: none; /* PC 환경에서 실제 콘텐츠 숨김 */
+    }
+}
+
